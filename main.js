@@ -48,12 +48,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  roulette: {
+    backgroundColor: 'rgba(255, 255, 255, 0.6)',
+    borderStyle: 'solid',
+    borderColor: 'grey',
+    borderRadius: 10,
+    borderWidth: 1,
+    padding: 5,
+  },
 });
 
 
 class HomeScreen extends React.Component {
-
-
 
   _handlePress() {
     this.props.navigator.push(restaurants[Math.floor(Math.random() * restaurants.length)]);
@@ -89,15 +95,7 @@ class HomeScreen extends React.Component {
           }}>
           Where shall we go for brunch?
         </Text>
-        <View style={{
-          backgroundColor: 'rgba(255, 255, 255, 0.6)',
-          borderStyle: 'solid',
-          borderColor: 'grey',
-          borderRadius: 10,
-          borderWidth: 1,
-          padding: 5,
-        }}>
-
+        <View style={styles.roulette}>
         <Button
           style={{
             color: 'rgb(36, 78, 20)',
@@ -154,15 +152,7 @@ class AA extends React.Component {
         }}>
         Piccino
       </Text>
-      <View style={{
-        backgroundColor: 'rgba(255, 255, 255, 0.6)',
-        borderStyle: 'solid',
-        borderRadius: 10,
-        borderWidth: 1,
-        borderColor: 'grey',
-        padding: 5
-      }}>
-
+      <View style={styles.roulette}>
       <Button
       style={{
         color: 'rgb(29, 22, 19)',
@@ -207,14 +197,7 @@ class BB extends React.Component {
         }}>
         Hillside S.C.
         </Text>
-      <View style={{
-        backgroundColor: 'rgba(255, 255, 255, 0.6)',
-        borderStyle: 'solid',
-        borderWidth: 1,
-        borderColor: 'grey',
-        borderRadius: 10,
-        padding: 5
-      }}>
+      <View style={styles.roulette}>
         <Button
         style = {{
           color: 'rgb(12, 26, 42)',
@@ -259,14 +242,7 @@ class CC extends React.Component {
         }}>
         Foreign Cinema
       </Text>
-      <View style={{
-        backgroundColor: 'rgba(255, 255, 255, 0.6)',
-        borderStyle: 'solid',
-        borderWidth: 1,
-        borderColor: 'grey',
-        borderRadius: 10,
-        padding: 5
-      }}>
+      <View style={styles.roulette}>
         <Button
         style={{
           color: 'rgb(64, 38, 19)',
@@ -311,14 +287,7 @@ class DD extends React.Component {
         }}>
         Magic Flute
       </Text>
-      <View style={{
-        backgroundColor: 'rgba(255, 255, 255, 0.6)',
-        borderStyle: 'solid',
-        borderWidth: 1,
-        borderColor: 'grey',
-        borderRadius: 10,
-        padding: 5
-      }}>
+      <View style={styles.roulette}>
         <Button
         style={{
           color: 'rgb(119, 21, 21)',
@@ -363,14 +332,7 @@ class EE extends React.Component {
         }}>
         Dottie's
       </Text>
-      <View style={{
-        backgroundColor: 'rgba(255, 255, 255, 0.6)',
-        borderStyle: 'solid',
-        borderWidth: 1,
-        borderColor: 'grey',
-        borderRadius: 10,
-        padding: 5
-      }}>
+      <View style={styles.roulette}>
         <Button
         style={{
           color: 'rgb(109, 24, 19)',
@@ -415,14 +377,7 @@ class FF extends React.Component {
         }}>
         Central Kitchen
       </Text>
-      <View style={{
-        backgroundColor: 'rgba(255, 255, 255, 0.6)',
-        borderStyle: 'solid',
-        borderWidth: 1,
-        borderColor: 'grey',
-        borderRadius: 10,
-        padding: 5
-      }}>
+      <View style={styles.roulette}>
         <Button
         style={{
           color: 'rgb(136, 50, 23)',
